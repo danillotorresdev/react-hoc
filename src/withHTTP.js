@@ -27,6 +27,7 @@ const withHttp = url => WrappedComponent => {
                 <WrappedComponent
                     data={this.state.data}
                     isLoading={this.state.isLoading}
+                    {...this.props}
                 />
             )
         }
